@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: aliceblue;
+            }
+            #userRemove {
+                margin: 10px;
+            }
+            #buttonOne {
+                background-color: white;
+                margin: 10px;
+                height: 5vh;
+                width: 10vw;            
+            }
+            #userAdd {
+                margin: 10px;
+            }
+            #buttonTwo {
+                background-color: white;
+                margin: 10px;
+                height: 5vh;
+                width: 10vw;
+            }
+            #list {
+                background-color: white;
+                width: 80%;
+                margin-left: auto;
+                margin-right:auto;
+            }
+            h1 {
+                color: Navy;
+                font-size: 7.5vh;
+            }
+            input {
+                background-color: rgba(0, 255, 238, 0.5);
+                height: 5vh;
+                width: 10vw;
+            }
+            ol {
+                position: relative;
+            }
+            #listFull {
+                font-size: 5vh;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Shopping List:</h1>
+        <script src = "shoppingListProject.js"></script>
+        <center>
+            <input type = "text" id = "userAdd">
+            <button onclick = "addMe()" id = "buttonOne">Add to list</button>
+            <input type = "number" id = "userRemove">
+            <button onclick = "removeMe()" id = "buttonTwo">Remove</button>
+        </center>
+        <div id = "list">
+            <ol>
+            </ol>
+        </div>
+        <center>
+            <p id = "listFull"></p>
+        </center>
+    </body>
+</html>
